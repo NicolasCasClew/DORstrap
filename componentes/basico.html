@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Botonoess</h1>
+    <button class="btn btn-danger">BOTON DANGER</button>
+    <button class="btn btn-success">BOTON SUCC</button>
+    <br />
+    <br />
+    <button class="btn btn-outline-dark">BOTON SUCC</button>
+    <br /><br />
+    <button class="btn btn-outline-dark btn-sm">BOTON DARK CHIQUI</button>
+    <button class="btn btn-outline-dark btn-m">BOTON DARK MIDI</button>
+    <button class="btn btn-outline-dark btn-lg">BOTON DARK LONGUI</button>
+
+    <h1>Alertaes</h1>
+
+    <div class="alert alert-danger">MUCHO CUIDAO</div>
+    <div class="alert alert-success">POCO CUIDAO</div>
+
+    <div class="alert alert-danger">
+      <h4 class="alert-heading" id="alert">CUIDAO!!!</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+        voluptates aspernatur cupiditate eum iure sequi officiis, blanditiis
+        incidunt quidem aliquid rem dolore iste nostrum mollitia sint
+        consequatur soluta cumque. Blanditiis!
+      </p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <h1>Botonus Gropu</h1>
+    <div class="btn-group">
+      <button class="btn btn-primary">Prime</button>
+      <button class="btn btn-danger">HAY</button>
+      <button class="btn btn-primary">Prime2</button>
+    </div>
+    <br /><br />
+    <div class="btn-group">
+      <input type="checkbox" class="btn-check" id="juan" name="juan" />
+      <label class="btn btn-outline-success" for="juan">AYAYAY</label>
+      <input type="checkbox" class="btn-check" id="juan2" name="juan2" />
+      <label class="btn btn-outline-success" for="juan2">AYAYAY</label>
+    </div>
+    <br /><br />
+    <h1>Badger</h1>
+    <button class="btn btn-danger">
+      Menageg <span class="badge text-bg-secondary rounded-pill">69</span>
+    </button>
+    <br /><br />
+    <h1>Listoncio</h1>
+    <ul class="list-group">
+      <li class="list-group-item active">Juan</li>
+      <li class="list-group-item">Pepe</li>
+      <li class="list-group-item">ENRIQUE</li>
+      <li class="list-group-item disabled">Manolo</li>
+    </ul>
+    <script>
+      const myAlert = bootstrap.Alert.getOrCreateInstance("#myOtherAlert");
+      myAlert.close();
+
+      const myOtherAlert = document.getElementById("alert");
+      myOtherAlert.addEventListener("close", (event) => {
+        console.log("lecum");
+      });
+    </script>
+  </body>
+</html>
